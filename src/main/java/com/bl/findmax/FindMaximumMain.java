@@ -35,6 +35,15 @@ public class FindMaximumMain<E extends Comparable<E>> {
     // Find Maximum for more than 3 Objects
     public static <E extends Comparable<E>> E findMaximumGeneric(E... genericArray) {
         Arrays.sort(genericArray);
+        printMaximumValue(genericArray);
         return genericArray[genericArray.length - 1];
+    }
+
+    // Print function for more than 3 objects
+    public static <E> void printMaximumValue(E... genericArray) {
+        System.out.println("Given Array:- ");
+        for (E iterator : genericArray)
+            System.out.print(iterator + " ");
+        System.out.println("\nMaximum element is:- " + genericArray[genericArray.length - 1]);
     }
 }
