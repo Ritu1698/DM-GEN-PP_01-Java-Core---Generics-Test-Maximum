@@ -38,22 +38,22 @@ public class FindMaximumTest {
 
     //Testing for Max Position At One
     @Test
-    public void givenThreeDouble_whenMaxDoubleAtPositionOne_returnPositionOneDouble() {
-        Double maximumDouble = findMaximumMainObj.findMaximumDouble(3.1, 2.2, 1.3);
-        assertEquals((Double) 3.1, maximumDouble);
+    public void givenThreeFloat_whenMaxFloatAtPositionOne_returnPositionOneFloat() {
+        Float maximumFloat = findMaximumMainObj.findMaximumFloat(3.1f, 2.2f, 1.3f);
+        assertEquals((Float) 3.1f, maximumFloat);
     }
 
     //Testing for Max Position At Two
     @Test
-    public void givenThreeDouble_whenMaxDoubleAtPositionTwo_returnPositionTwoDouble() {
-        Double maximumDouble = findMaximumMainObj.findMaximumDouble(2.2, 3.1, 1.3);
-        assertEquals((Double) 3.1, maximumDouble);
+    public void givenThreeFloat_whenMaxFloatAtPositionTwo_returnPositionTwoFloat() {
+        Float maximumFloat = findMaximumMainObj.findMaximumFloat(2.2f, 3.1f, 1.3f);
+        assertEquals((Float) 3.1f, maximumFloat);
     }
 
     //Testing for Max Position At Three
     @Test
-    public void givenThreeDouble_whenMaxDoubleAtPositionThree_ReturnPositionThreeDouble() {
-        Double maximumDouble = findMaximumMainObj.findMaximumDouble(1.3, 2.2, 3.1);
-        assertEquals((Double) 3.1, maximumDouble);
+    public void givenThreeFloat_whenMaxFloatAtPositionThree_ReturnPositionThreeFloat() {
+        Float maximumFloat = findMaximumMainObj.findMaximumFloat(1.3f, 2.2f, 3.1f);
+        assertEquals((Float) 3.1f, maximumFloat);
     }
 }

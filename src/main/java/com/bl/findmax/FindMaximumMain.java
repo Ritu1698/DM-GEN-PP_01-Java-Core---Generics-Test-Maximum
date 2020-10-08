@@ -11,13 +11,13 @@ public class FindMaximumMain {
         return maxInteger;
     }
 
-    //Function to Find The Maximum Double
-    public Double findMaximumDouble(Double firstDouble, Double secondDouble, Double thirdDouble) {
-        Double maxDouble = firstDouble;
-        if (secondDouble.compareTo(maxDouble) > 0)
-            maxDouble = secondDouble;
-        if (thirdDouble.compareTo(maxDouble) > 0)
-            maxDouble = thirdDouble;
-        return maxDouble;
+    //Function to Find The Maximum Float
+    public Float findMaximumFloat(Float firstFloat, Float secondFloat, Float thirdFloat) {
+        Float maxFloat = firstFloat;
+        if (secondFloat.compareTo(maxFloat) > 0)
+            maxFloat = secondFloat;
+        if (thirdFloat.compareTo(maxFloat) > 0)
+            maxFloat = thirdFloat;
+        return maxFloat;
     }
 }
