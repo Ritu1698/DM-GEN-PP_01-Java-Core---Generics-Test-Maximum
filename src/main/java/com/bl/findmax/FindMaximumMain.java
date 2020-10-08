@@ -20,4 +20,14 @@ public class FindMaximumMain {
             maxFloat = thirdFloat;
         return maxFloat;
     }
+
+    //Function to Find The Maximum String
+    public String findMaximumString(String firstString, String secondString, String thirdString) {
+        String maxString = firstString;
+        if (secondString.compareTo(maxString) > 0)
+            maxString = secondString;
+        if (thirdString.compareTo(maxString) > 0)
+            maxString = thirdString;
+        return maxString;
+    }
 }
