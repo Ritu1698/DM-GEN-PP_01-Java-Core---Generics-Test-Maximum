@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.findmax.FindMaximumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-08T13:35:02" hostname="LAPTOP-RGI87V6B" time="0.006">
+<testsuite name="com.bl.findmax.FindMaximumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-08T13:48:08" hostname="LAPTOP-RGI87V6B" time="0.005">
   <properties/>
-  <testcase name="givenThreeIntegers_whenMaxIntegerAtPositionOne_returnPositionOneInteger" classname="com.bl.findmax.FindMaximumTest" time="0.006"/>
+  <testcase name="givenThreeFloat_whenMaxFloatAtPositionThree_ReturnPositionThreeFloat" classname="com.bl.findmax.FindMaximumTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

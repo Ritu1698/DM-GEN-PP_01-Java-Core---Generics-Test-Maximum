@@ -1,19 +1,23 @@
 package com.bl.findmax;
 
+import java.util.Arrays;
+
 public class FindMaximumMain<E extends Comparable<E>> {
     E firstGenericObject;
     E secondGenericObject;
     E thirdGenericObject;
+
     public FindMaximumMain(E firstGenericObject, E secondGenericObject, E thirdGenericObject) {
         this.firstGenericObject = firstGenericObject;
         this.secondGenericObject = secondGenericObject;
         this.thirdGenericObject = thirdGenericObject;
     }
+
     public FindMaximumMain() {
     }
 
     //Function to Find The Maximum Generic
-    public  static <E extends Comparable<E>> E findMaximumGeneric(E firstGeneric, E secondGeneric, E thirdGeneric) {
+    public static <E extends Comparable<E>> E findMaximumGeneric(E firstGeneric, E secondGeneric, E thirdGeneric) {
         E maxGeneric = firstGeneric;
         if (secondGeneric.compareTo(maxGeneric) > 0) {
             maxGeneric = secondGeneric;
@@ -26,5 +30,11 @@ public class FindMaximumMain<E extends Comparable<E>> {
 
     public E findMaximumGeneric() {
         return FindMaximumMain.findMaximumGeneric(firstGenericObject, secondGenericObject, thirdGenericObject);
+    }
+
+    // Find Maximum for more than 3 Objects
+    public static <E extends Comparable<E>> E findMaximumGeneric(E... genericArray) {
+        Arrays.sort(genericArray);
+        return genericArray[genericArray.length - 1];
     }
 }

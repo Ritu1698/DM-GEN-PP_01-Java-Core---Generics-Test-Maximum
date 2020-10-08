@@ -70,4 +70,25 @@ public class FindMaximumTest {
         String maximumString = FindMaximumMain.findMaximumGeneric("Ball", "Apple", "Cat");
         assertEquals("Cat", maximumString);
     }
+
+    //Testing for Max Position For More Than 3 Integers
+    @Test
+    public void givenMoreThanThreeIntegers_whenMaxIntegerAtAnyPosition_ReturnMaxInteger() {
+        Integer max = FindMaximumMain.findMaximumGeneric(5, 1, 3, 4, 2);
+        assertEquals((Integer) 5, max);
+    }
+
+    //Testing for Max Position For More Than 3 Floats
+    @Test
+    public void givenMoreThan3Float_whenMaxFloatAtAnyPosition_ReturnMaxFloat() {
+        Float max = FindMaximumMain.findMaximumGeneric(11.64f, 39.2f, 5.0f, 11.21f, 8.9f);
+        assertEquals((Float) 39.2f, max);
+    }
+
+    //Testing for Max Position For More Than 3 Strings
+    @Test
+    public void givenMoreThan3String_whenMaxFlAtAnyPosition_ReturnMaxString() {
+        String max = FindMaximumMain.findMaximumGeneric("Apple", "Cat", "Dog", "Fish", "Ball");
+        assertEquals("Fish", max);
+    }
 }
