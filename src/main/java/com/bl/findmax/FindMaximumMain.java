@@ -10,4 +10,14 @@ public class FindMaximumMain {
             maxInteger = thirdInteger;
         return maxInteger;
     }
+
+    //Function to Find The Maximum Double
+    public Double findMaximumDouble(Double firstDouble, Double secondDouble, Double thirdDouble) {
+        Double maxDouble = firstDouble;
+        if (secondDouble.compareTo(maxDouble) > 0)
+            maxDouble = secondDouble;
+        if (thirdDouble.compareTo(maxDouble) > 0)
+            maxDouble = thirdDouble;
+        return maxDouble;
+    }
 }
