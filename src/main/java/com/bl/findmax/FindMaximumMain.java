@@ -1,33 +1,15 @@
 package com.bl.findmax;
 
 public class FindMaximumMain {
-    //Function to Find The Maximum Integer
-    public Integer findMaximumInteger(Integer firstInteger, Integer secondInteger, Integer thirdInteger) {
-        Integer maxInteger = firstInteger;
-        if (secondInteger.compareTo(maxInteger) > 0)
-            maxInteger = secondInteger;
-        if (thirdInteger.compareTo(maxInteger) > 0)
-            maxInteger = thirdInteger;
-        return maxInteger;
-    }
-
-    //Function to Find The Maximum Float
-    public Float findMaximumFloat(Float firstFloat, Float secondFloat, Float thirdFloat) {
-        Float maxFloat = firstFloat;
-        if (secondFloat.compareTo(maxFloat) > 0)
-            maxFloat = secondFloat;
-        if (thirdFloat.compareTo(maxFloat) > 0)
-            maxFloat = thirdFloat;
-        return maxFloat;
-    }
-
-    //Function to Find The Maximum String
-    public String findMaximumString(String firstString, String secondString, String thirdString) {
-        String maxString = firstString;
-        if (secondString.compareTo(maxString) > 0)
-            maxString = secondString;
-        if (thirdString.compareTo(maxString) > 0)
-            maxString = thirdString;
-        return maxString;
+    //Function to Find The Maximum Generic
+    public <E extends Comparable<E>> E findMaximumGeneric(E firstGeneric, E secondGeneric, E thirdGeneric) {
+        E maxGeneric = firstGeneric;
+        if (secondGeneric.compareTo(maxGeneric) > 0) {
+            maxGeneric = secondGeneric;
+        }
+        if (thirdGeneric.compareTo(maxGeneric) > 0) {
+            maxGeneric = thirdGeneric;
+        }
+        return maxGeneric;
     }
 }
