@@ -1,4 +1,4 @@
-package com.bl.findmax;
+package com.bridgelabz.findMaxUsingGeneric;
 
 import static org.junit.Assert.assertEquals;
 
